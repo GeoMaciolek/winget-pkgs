@@ -1,0 +1,20 @@
+# Created with YamlCreate.ps1 v2.0.0 using YAML parsing
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.0.0.schema.json
+
+PackageIdentifier: schild-report.schild-report
+PackageVersion: 2.5.0.0
+MinimumOSVersion: 10.0.0.0
+InstallModes:
+- silent
+- silentWithProgress
+Installers:
+- InstallerLocale: en-US
+  Architecture: x64
+  InstallerType: msi
+  Scope: user
+  InstallerUrl: https://github.com/schild-report/schild.report/releases/download/v2.5.109/schild.report.msi
+  InstallerSha256: 6620D8DABD9F9FC8E5AEA9E71FF275B6207386F95F91CED29420DCDD4342CF9F
+  UpgradeBehavior: install
+  ProductCode: '{E5FBD7EE-1305-47A1-AD58-684BD153FF37}'
+ManifestType: installer
+ManifestVersion: 1.0.0
